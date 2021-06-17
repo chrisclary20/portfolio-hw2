@@ -1,0 +1,192 @@
+body {
+  background-color: rgb(231, 227, 227);
+  opacity: 90%;
+  filter: brightness(90%);
+  height: 200vh;
+  background: linear-gradient(135deg, orange 20%, cyan, aqua, aquamarine);
+}
+
+header {
+  /* background-color: aqua; */
+  background: linear-gradient(135deg, orange 20%, cyan, aqua, aquamarine);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  border: solid aquamarine;
+  border-radius: 150px 150px 150px 150px;
+}
+
+h1 {
+  display: flex;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  align-content: flex-start;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 400px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  text-decoration: none;
+  color: blueviolet;
+  border: blueviolet solid;
+}
+.imgs {
+  position: absolute;
+  left: 200px;
+  top: 150px;
+  height: 350px;
+  width: 350px;
+  border: aqua solid;
+  border-radius: 350px 350px 350px 350px;
+  animation: img 2.9s linear infinite;
+}
+
+@keyframes img {
+  0% {
+    border-radius: 350px 350px 350px 350px;
+  }
+  25% {
+    border-color: green;
+  }
+  50% {
+    border-color: red;
+    transform: translateY(10%);
+  }
+  75% {
+    border-color: blue;
+    transform: translateY(15%);
+  }
+  100% {
+    border-color: aquamarine;
+    transform: translateX(0%);
+  }
+}
+
+#aboutme {
+  background-color: aqua;
+  border: solid white;
+  border-style: groove;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Shadows Into Light', cursive;
+  position: relative;
+  text-align: center;
+  top: 175px;
+  left: 670px;
+  width: 400px;
+}
+
+#portfolio {
+  background-color: aqua;
+  border: solid white;
+  border-style: groove;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Shadows Into Light', cursive;
+  position: relative;
+  text-align: center;
+  position: absolute;
+  width: 400px;
+  top: 800px;
+  left: 670px;
+}
+
+#imgportfolio {
+  position: absolute;
+  top: 550px;
+  right: 150px;
+  border: aqua solid;
+  border-radius: 350px 350px 350px 350px;
+  animation: img 2.9s linear infinite;
+}
+
+#contact {
+  background-color: aqua;
+  border: solid white;
+  border-style: groove;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Shadows Into Light', cursive;
+  position: relative;
+  text-align: center;
+  position: absolute;
+  width: 400px;
+  left: 670px;
+  top: 1200px;
+}
+
+#btngit {
+  position: absolute;
+  top: 1400px;
+  left: 400px;
+  background-color: black;
+  padding: 0%;
+}
+
+#btngmail {
+  position: absolute;
+  top: 1400px;
+  left: 750px;
+  padding: 0%;
+  background-color: blanchedalmond;
+}
+
+#btnlinkedin {
+  position: absolute;
+  top: 1400px;
+  left: 1100px;
+  padding: 0%;
+  background-color: #2867b2;
+}
+
+#runningbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 100px;
+  font-family: 'Shadows Into Light', cursive;
+  position: absolute;
+  top: 1000px;
+  left: 190px;
+  overflow: hidden;
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px 100px 100px 100px;
+  animation: running 2.9s linear infinite;
+  animation-play-state: paused;
+  animation-delay: -1s;
+}
+
+@keyframes running {
+  0% {
+    height: 200px;
+  }
+  25% {
+    height: 300px;
+    transform: rotateY(360deg);
+  }
+  50% {
+    height: 250px;
+  }
+  100% {
+    height: 200px;
+  }
+}
